@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="input-main input-main-fake" @click="openInput(nickname ? 'comment' : 'nickname')">
-          <span v-if="!nickname">请输入昵称</span>
+          <span v-if="!nickname">请输入昵称,开始评论吧!</span>
           <span v-else>发一条友善的评论~，你的妙评何时再现</span>
         </div>
       </div>

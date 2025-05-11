@@ -28,6 +28,15 @@ const routes: Array<RouteRecordRaw> = [
       title: '文件预览',
       requiresAuth: true
     }
+  },
+  {
+    path: '/upload',
+    name: 'upload',
+    component: () => import('../views/Upload.vue'),
+    meta: {
+      title: '上传',
+      requiresAuth: true
+    }
   }
 ]
 
