@@ -1,15 +1,20 @@
-import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import { createApp, ComponentPublicInstance } from 'vue'
+
 import App from './App.vue'
 import router from './router'
 import './style.css'
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
 
 // 创建应用实例
 const app = createApp(App)
 
 // 全局错误处理
-app.config.errorHandler = (err, instance, info) => {
+app.config.errorHandler = (
+  err: unknown,
+  instance: ComponentPublicInstance | null,
+  info: string
+) => {
   console.error('全局错误:', err)
   console.error('错误组件:', instance)
   console.error('错误信息:', info)
