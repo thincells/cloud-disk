@@ -1,7 +1,7 @@
 # vite-vue3-app
 #### 该项目为练手,有空继续完善功能
 #### 介绍
-一个vite+vue3的App开发模板
+一个vite+vue3的App个人云盘
 
 #### 软件架构
  Vite + Vue3 + Typescript + Eslint9 + Prettier + Husky + Commitlint + Stylelint 
